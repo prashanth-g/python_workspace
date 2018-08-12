@@ -8,7 +8,6 @@ class LinkedList(object):
         self.head = head
 
     def append(self, new_element):
-        """Append at the end of the list"""
         current = self.head
         if self.head:
             while current.next:
@@ -18,9 +17,6 @@ class LinkedList(object):
             self.head = new_element
 
     def get_position(self, position):
-        """Get an element from a particular position.
-        Assume the first position is "1".
-        Return "None" if position is not in the list."""
         counter = 1
         current = self.head
         if position < 1:
@@ -33,10 +29,6 @@ class LinkedList(object):
         return None
 
     def insert(self, new_element, position):
-        """Insert a new node at the given position.
-        Assume the first position is "1".
-        Inserting at position 3 means between
-        the 2nd and 3rd elements."""
         counter = 1
         current = self.head
         if position > 1:
@@ -52,7 +44,6 @@ class LinkedList(object):
             self.head = new_element
             
     def delete(self, value):
-        """Delete the first node with a given value."""
         current = self.head
         if current.value == value:
             self.head = current.next
