@@ -8,6 +8,7 @@ class LinkedList(object):
         self.head = head
 
     def append(self, new_element):
+        """Append at the end of the list"""
         current = self.head
         if self.head:
             while current.next:
