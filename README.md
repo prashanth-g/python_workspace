@@ -1,3 +1,3 @@
 # python_workspace
 
-Basically Data Structures
+Basically Data Structures and its implementations
