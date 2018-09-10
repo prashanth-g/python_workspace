@@ -10,5 +10,10 @@ for total_iter in range(len(data)-1, 0, -1):
             data[step_iter+1] = temp
             swap_count = swap_count+1
 
+# iterations -> n - 1 = 8
+# comparison for each itertion -> n - 1  = 8
+# time complexity = (n - 1) x (n - 1) = n^2-2n+1 = n^2 -> O(n^2)
+
 print(swap_count)
 print(data) # Sorted now
+
