@@ -16,3 +16,11 @@ def dispatch_dict(operator, x, y):
     }.get(operator, lambda: None)()
 
 print(dispatch_dict('add', 4, 6))
+
+# collections.Counter lets you find the most common
+# elements in an iterable:
+import collections
+
+c = collections.Counter('python_experience')
+
+print(c.most_common(3))
