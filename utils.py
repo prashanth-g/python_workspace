@@ -24,3 +24,21 @@ import collections
 c = collections.Counter('python_experience')
 
 print(c.most_common(3))
+
+class PyClass:
+    data = 100
+    def method(self):
+        print("Instance method called", self.data)
+    
+    @classmethod
+    def class_method(cls):
+        print("Class method called", cls.data)
+
+    @staticmethod
+    def static_method():
+        print("Static method called")
+
+obj = PyClass()
+obj.method()
+obj.class_method()
+obj.static_method()
