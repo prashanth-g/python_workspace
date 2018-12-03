@@ -42,3 +42,13 @@ obj = PyClass()
 obj.method()
 obj.class_method()
 obj.static_method()
+
+print("\n")
+print("Lambda functions")
+# lambda functions 
+
+multiply = lambda x, y: x * y
+
+print(multiply(10,20))
+
+print((lambda x, y: x // y)(400,2))
